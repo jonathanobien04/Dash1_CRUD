@@ -1,0 +1,20 @@
+@model FirstASP.Models.Customer
+@{ ViewData["Title"] = "Create Customer"; }
+
+<h1>Create Customer</h1>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3"><label asp-for="CustomerName" class="form-label"></label><input asp-for="CustomerName" class="form-control" /><span asp-validation-for="CustomerName" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="ContactName" class="form-label"></label><input asp-for="ContactName" class="form-control" /><span asp-validation-for="ContactName" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="Email" class="form-label"></label><input asp-for="Email" class="form-control" /><span asp-validation-for="Email" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="Phone" class="form-label"></label><input asp-for="Phone" class="form-control" /><span asp-validation-for="Phone" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="Address" class="form-label"></label><input asp-for="Address" class="form-control" /><span asp-validation-for="Address" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="City" class="form-label"></label><input asp-for="City" class="form-control" /><span asp-validation-for="City" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="State" class="form-label"></label><input asp-for="State" class="form-control" /><span asp-validation-for="State" class="text-danger"></span></div>
+    <div class="mb-3"><label asp-for="ZipCode" class="form-label"></label><input asp-for="ZipCode" class="form-control" /><span asp-validation-for="ZipCode" class="text-danger"></span></div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
