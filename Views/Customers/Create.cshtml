@@ -1,0 +1,16 @@
+@model MVC_REPO.Models.Customer
+
+<h2>Create Customer</h2>
+<form asp-action="Create">
+    <div class="form-group mb-2"><label>Customer Name</label><input asp-for="CustomerName" class="form-control" required /></div>
+    <div class="form-group mb-2"><label>Contact Name</label><input asp-for="ContactName" class="form-control" required /></div>
+    <div class="form-group mb-2"><label>Email</label><input asp-for="Email" class="form-control" type="email" required /></div>
+    <div class="form-group mb-2"><label>Phone</label><input asp-for="Phone" class="form-control" required /></div>
+    <div class="form-group mb-2"><label>Address</label><input asp-for="Address" class="form-control" required /></div>
+    <div class="form-group mb-2"><label>City</label><input asp-for="City" class="form-control" required /></div>
+    <div class="form-group mb-2"><label>State</label><input asp-for="State" class="form-control" required /></div>
+    <div class="form-group mb-2"><label>Zip Code</label><input asp-for="ZipCode" class="form-control" required /></div>
+    <br/>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
