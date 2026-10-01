@@ -1,0 +1,59 @@
+@model EntprogCRUD.Models.Customer
+
+@{
+    ViewData["Title"] = "Add Customer";
+}
+
+<h1>Add Customer</h1>
+
+<form asp-action="Create" method="post">
+
+    <div>
+        <label>Customer Name</label>
+        <input asp-for="CustomerName" />
+    </div>
+
+    <div>
+        <label>Contact Name</label>
+        <input asp-for="ContactName" />
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" />
+    </div>
+
+    <div>
+        <label>Phone</label>
+        <input asp-for="Phone" />
+    </div>
+
+    <div>
+        <label>Address</label>
+        <input asp-for="Address" />
+    </div>
+
+    <div>
+        <label>City</label>
+        <input asp-for="City" />
+    </div>
+
+    <div>
+        <label>State</label>
+        <input asp-for="State" />
+    </div>
+
+    <div>
+        <label>Zip Code</label>
+        <input asp-for="ZipCode" />
+    </div>
+
+    <br />
+
+    <button type="submit">Add Customer</button>
+
+</form>
+
+<br />
+
+<a asp-action="Index">Back to Customer List</a>
